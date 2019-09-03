@@ -1,0 +1,8 @@
+#============Database Properties===============
+
+spring:
+  application:
+    name: billingApp
+      
+server:
+  port: 8093
