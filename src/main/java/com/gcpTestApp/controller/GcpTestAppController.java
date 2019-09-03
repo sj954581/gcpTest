@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-
 @RestController
 public class GcpTestAppController {
 
@@ -21,10 +20,16 @@ public class GcpTestAppController {
 		String str = "Hey!!! Default Api from GCP Srevice... ";
 		return str;
 	}
-	
+
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String getText2() {
 		String str = "Hey!!! test Api from GCP Srevice... ";
+		return str;
+	}
+
+	@RequestMapping(value = "/first", method = RequestMethod.GET)
+	public String getText3() {
+		String str = "Hey!!! first Api from GCP Srevice... ";
 		return str;
 	}
 }
